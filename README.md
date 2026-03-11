@@ -1,6 +1,6 @@
 # python-quantum-study-guide
 
-This Python repository provides a study guide for applying to a quantum software engineer role that is focused on modernizing, refactoring, and tuning legacy or existing codebases.
+This Python repository provides a study guide for applying to a `quantum software engineer` role that is focused on modernizing, refactoring, testing, and tuning legacy or existing Python codebases.
 
 ## Four-Week Study Guide
 
