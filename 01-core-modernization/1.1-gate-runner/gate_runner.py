@@ -45,6 +45,11 @@ def run_gate(qubit: QubitId, gate_name: str, angles: Sequence[float], shots: int
     Returns:
         a list of measurement results, one per shot
     """
+    if not isinstance(qubit, int):
+        raise TypeError(f"Qubit index must be an integer, got {type(qubit).__name__}")
+    if qubit < 0:
+        raise ValueError(f"Invalid qubit index: {qubit} (must be >= 0)")
+
     results: list[np.ndarray] = []
 
     for i in range(shots):
