@@ -4,7 +4,9 @@ This Python repository provides a study guide for applying to a `quantum softwar
 
 ## Four-Week Study Guide
 
-Week 1 - Core Modernization
+__Week 1: Core Modernization__
+
+1.1 - add type hints and annotations to a legacy gate runner
 
 Week 2 - Async & Pattern Matching
 
