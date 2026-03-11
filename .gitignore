@@ -1,0 +1,30 @@
+# .gitignore
+# files and folders ignored by git
+
+# python files
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+
+# python virtual environment
+.venv
+
+# macOS system files
+.DS_Store
+
+# environment variables
+.env
+
+# mypy cache - static code analysis
+.mypy_cache/
+
+# pytest cache
+.pytest_cache/
+
+# pytest html reports
+htmlcov/
+
+# pytest coverage reports
+coverage.xml
