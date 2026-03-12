@@ -3,6 +3,7 @@
 # updated: Wednesday, March 11, 2026
 
 # python files
+__pycache__/
 *.pyc
 *.pyo
 *.pyd

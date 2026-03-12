@@ -24,14 +24,6 @@ import numpy as np
 
 QubitId: TypeAlias = int
 
-"""
-Sequence[float] is a broader type than `list[]`.  It accepts any
-ordered, indexable collection: list, tuple, NumPy array, etc.
-
-In quantum software, angles often come from NumPy as arrays, or 
-from other functions as tuples.
-"""
-
 def run_gate(qubit: QubitId, gate_name: str, angles: Sequence[float], shots: int) -> list[np.ndarray]:
     """ 
     Run a quantum gate on a qubit a given number of times and return measurement results.

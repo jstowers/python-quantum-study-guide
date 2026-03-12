@@ -1,16 +1,18 @@
 # Core Modernization
 
-Tuesday, March 10, 2026
-
 ## Topics
 
-1.1 Type hints and annotations
+### 1.1 Type hints and annotations
 
-1.2 Data classes and structured configuration
+`Sequence[float]` is a broader type than `list[]`.  It accepts any ordered, indexable collection: list, tuple, NumPy array, etc.
 
-1.3 Pathlib - modern file paths
+In quantum software, angles often come from NumPy as arrays, or from other functions as tuples.
 
-1.4 Context managers
+### 1.2 Data classes and structured configuration
+
+### 1.3 Pathlib - modern file paths
+
+### 1.4 Context managers
 
 ## Unit Tests
 
@@ -34,3 +36,12 @@ If the test passes, you will see output like:
 If the test fails, you will see output like:
 
 ![test-failure-sample](./image/test-failure-sample.png)
+
+
+## First Commit
+
+Tuesday, March 10, 2026
+
+## Last Revision
+
+Wednesday, March 11, 2026

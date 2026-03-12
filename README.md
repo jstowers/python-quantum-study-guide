@@ -12,13 +12,13 @@ __Week 1: Core Modernization__
 
 Week 2 - Async & Pattern Matching
 
-Week 3 - Profiling & NumPy Vecotrisation
+Week 3 - Profiling & NumPy Vectorisation
 
 Week 4 - Numba, Memory & Parallelism
 
 ## Virtual Environment Setup
 
-A _virtual environment_ is an isolated Python installation for a specific project.  The virtual environment for this pproject is `.venv`.
+A _virtual environment_ is an isolated Python installation for a specific project.  The virtual environment for this project is `.venv`.
 
 The `.venv` folder contains its own isolated copy of Python and `pip`, the Python package manager.  This ensures that any packages installed for this project, like `numba`, `pytest`, and `numpy`, do not impact or conflict with any other project.
 
@@ -26,11 +26,11 @@ You have two options to activate the virtual environment:
 
 1. Cursor command palette
 
-2. Termainl
+2. Terminal
 
 ### 1. Cursor command palette
 
-Click `Cmd + Shift + P` to open the Cursor command pallete.
+Click `Cmd + Shift + P` to open the Cursor command palette.
 
 Search for "Python: Select Interpreter".
 
@@ -48,7 +48,7 @@ source .venv/bin/activate
 
 ### Auto Activation in New Terminals
 
-Click `Cmd + Shift + P` to open the Cursor command pallete.
+Click `Cmd + Shift + P` to open the Cursor command palette.
 
 Search for "Preferences: Open User Settings (JSON)"
 
