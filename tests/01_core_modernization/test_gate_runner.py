@@ -22,4 +22,4 @@ def test_run_gate_raises_value_error_for_negative_qubit_index():
 
 def test_run_gate_raises_type_error_for_non_integer_qubit_index():
     with pytest.raises(TypeError, match=re.escape("Qubit index must be an integer, got str")):
-        run_gate("q0", "X", [0.0], 1)
+        run_gate("q0", "X", [0.0], 1) # type: ignore[arg-type]
