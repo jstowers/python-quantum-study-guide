@@ -65,3 +65,13 @@ To kill the virtual environment, close the terminal or type this command:
 ```bash
 deactivate
 ```
+
+## Unit Tests
+
+The `pytest` configuration file is `conftest.py`.  It runs automatically before the test suite.
+
+To run all unit tests from the terminal with verbose (`-v`) output:
+
+```bash
+pytest tests/ -v
+```
