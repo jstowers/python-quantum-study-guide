@@ -1,14 +1,31 @@
-# Exercise 1.2: Refactor Config Dict to DataClass
-# Study guide reference:  Section 1.2, p. 14
-# Updated: Wednesday, March 11, 2026
+"""
+1.2: Refactor Config Dict to DataClass
 
-from dataclasses import dataclass
+Reference:  Study Guide, section 1.2, page 14
+Updated:    Thursday, March 12, 2026
+
+Problem:
+
+Convert this fragile dictionary into a safe, typed @dataclass.
+
+pulse_config = {
+    'frequency_hz': 5.1e9
+    'amplitude': 0.85,
+    'duration_ns': 40,
+    'backend': 'ibm_kyoto',
+    'tags': ['calibration', 'q0']
+}
+"""
+
+from dataclasses import dataclass, field
 
 @dataclass
 class Config:
-    shots: int
-    qubit_index: int
-    gate: str
-    angle: float
+    frequency_hz: float
+    amplitude: float
+    duration_ns: int
+    backend: str
+    tags: list[str] = field(default_factory=list)
 
-def run_gate(config: Config) -> list[float]:
+def run_gate(config: Config) -> None:
+    print(f"Running gate with config: {config}")
