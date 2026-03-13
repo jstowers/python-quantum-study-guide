@@ -30,3 +30,6 @@ htmlcov/
 
 # pytest coverage reports
 coverage.xml
+
+# cursor settings guidance
+CURSOR-SETTINGS.md
